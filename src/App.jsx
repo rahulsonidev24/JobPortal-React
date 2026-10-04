@@ -12,7 +12,7 @@ import JobDetails from "./pages/JobDetails";
 import ApplyJob from "./pages/ApplyJob";
 import Applications from "./pages/Applications";
 import ApplicationDetails from "./pages/ApplicationDetails";
-import Signup from "./pages/SignUp";
+import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 function App() {
     const [searchText, setSearchText] = useState("");
