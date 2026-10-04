@@ -1,0 +1,74 @@
+.companies{
+    width: 90%;
+    margin: auto;
+    padding: 60px 0;
+}
+.company-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.company-heading h2{
+    font-size: 35px;
+}
+.company-heading button{
+    color: blue;
+    border:none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.company-heading button:hover{
+color: black;
+}
+.company-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.company-card{
+    background: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.company-card:hover{
+    transform: translateY(-10px);
+}
+.company-card img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+.company-card h3{
+    margin-top: 20px;
+}
+.company-card p{
+    color: #666;
+    margin-top: 15px;
+}
+.view-all-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.view-all-button:hover {
+    background-color: #1d4ed8;
+}
+.dark-mode .view-all-button {
+    background-color: #2563eb;
+    color: white;
+}
+
+.dark-mode .view-all-button:hover {
+    background-color: #1d4ed8;
+}

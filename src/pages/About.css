@@ -1,0 +1,246 @@
+/* =================================
+   ABOUT PAGE
+================================= */
+
+.about-page {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/* =================================
+   HERO
+================================= */
+
+.about-hero {
+    text-align: center;
+    padding: 70px 20px;
+    background: #eef4ff;
+}
+
+.about-hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.about-hero h1 span {
+    color: #2563eb;
+}
+
+.about-hero p {
+    font-size: 18px;
+    color: #666;
+}
+
+
+/* =================================
+   ABOUT SECTION
+================================= */
+
+.about-section {
+    padding: 60px 8%;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.about-content p {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+/* =================================
+   FEATURES
+================================= */
+
+.about-features {
+    padding: 60px 8%;
+    background: #f7f9fc;
+}
+
+.about-features > h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(4, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* =================================
+   CALL TO ACTION
+================================= */
+
+.about-cta {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.about-cta h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.about-cta p {
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.about-jobs-button {
+    display: inline-block;
+    padding: 13px 30px;
+
+    background: #2563eb;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 7px;
+
+    font-weight: 600;
+}
+
+.about-jobs-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =================================
+   DARK MODE
+================================= */
+
+.dark-mode .about-hero {
+    background: #1b2738;
+}
+
+.dark-mode .about-hero h1 {
+    color: white;
+}
+
+.dark-mode .about-hero p {
+    color: #bbb;
+}
+
+.dark-mode .about-content h2,
+.dark-mode .about-features > h2,
+.dark-mode .about-cta h2 {
+    color: white;
+}
+
+.dark-mode .about-content p {
+    color: #bbb;
+}
+
+.dark-mode .about-features {
+    background: #151515;
+}
+
+.dark-mode .feature-card {
+    background: #1e1e1e;
+}
+
+.dark-mode .feature-card h3 {
+    color: white;
+}
+
+.dark-mode .feature-card p {
+    color: #bbb;
+}
+
+.dark-mode .about-cta p {
+    color: #bbb;
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media screen and (max-width: 1000px) {
+
+    .features-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media screen and (max-width: 600px) {
+
+    .about-hero {
+        padding: 50px 20px;
+    }
+
+    .about-hero h1 {
+        font-size: 34px;
+    }
+
+    .about-section,
+    .about-features {
+        padding: 45px 20px;
+    }
+
+    .about-content h2,
+    .about-features > h2,
+    .about-cta h2 {
+        font-size: 28px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

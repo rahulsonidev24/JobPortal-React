@@ -1,0 +1,872 @@
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7f4;
+}
+
+
+/* =========================================================
+   LIGHT / DARK MODE
+========================================================= */
+
+.light-mode {
+    width: 100%;
+    min-height: 100vh;
+    background: #f4f7f4;
+    color: #222;
+}
+
+.dark-mode {
+    width: 100%;
+    min-height: 100vh;
+    background: #121212;
+    color: white;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    width: 100%;
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 5%;
+
+    background-color: white;
+
+    box-shadow: 0 2px 10px rgba(1, 1, 1, 0.2);
+
+    position: relative;
+    z-index: 1000;
+}
+
+
+/* Dark Mode Navbar */
+
+.dark-mode .navbar {
+    background-color: #1e1e1e;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #2563eb;
+}
+
+
+/* =========================================================
+   NAVIGATION LINKS
+========================================================= */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: darkorchid;
+}
+
+
+/* Dark Mode Links */
+
+.dark-mode .nav-links a {
+    color: white;
+}
+
+
+/* =========================================================
+   LOGIN BUTTON
+========================================================= */
+
+.log {
+    padding: 10px 30px;
+
+    border: 2px solid rgba(0, 0, 0, 0.597);
+
+    background-color: white;
+    color: blue;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+}
+
+.log:hover {
+    color: blueviolet;
+}
+
+
+/* Dark Mode Login */
+
+.dark-mode .log {
+    background-color: #1e1e1e;
+    color: white;
+    border-color: #777;
+}
+
+/* =========================================
+   SIGN UP BUTTON
+========================================= */
+
+.sign {
+    display: inline-block;
+
+    text-decoration: none;
+
+    padding: 10px 30px;
+
+    min-width: 120px;
+
+    border: 2px solid rgba(0, 0, 0, 0.597);
+
+    background-color: blue;
+
+    color: white;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.sign:hover {
+    background-color: #1d4ed8;
+
+    color: white;
+}
+
+
+/* Dark Mode */
+
+.dark-mode .sign {
+    border-color: #777;
+}
+
+/* =========================================================
+   DARK / LIGHT BUTTON
+========================================================= */
+
+.theme-button {
+    padding: 10px 15px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #333;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+.theme-button:hover {
+    background-color: #555;
+}
+
+
+/* =========================================================
+   HAMBURGER BUTTON
+========================================================= */
+
+.menu-button {
+    display: none;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    color: #222;
+
+    padding: 5px;
+}
+
+
+/* Dark Mode Hamburger */
+
+.dark-mode .menu-button {
+    color: white;
+}
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.Hero-container {
+    display: flex;
+
+    width: 100%;
+
+    margin: 20px 0;
+
+    padding: 0;
+
+    gap: 0;
+
+    align-items: stretch;
+}
+
+
+.Hero {
+    width: 45%;
+
+    margin: 20px;
+
+    padding: 70px 40px;
+
+    box-sizing: border-box;
+
+    font-size: 20px;
+
+    color: #333;
+}
+
+
+.Hero h1 {
+    font-size: 50px;
+
+    color: #222;
+
+    margin-bottom: 30px;
+}
+
+
+.Hero span {
+    color: #2563eb;
+}
+
+
+/* Dark Mode Hero */
+
+.dark-mode .Hero {
+    color: #ddd;
+}
+
+.dark-mode .Hero h1 {
+    color: white;
+}
+
+
+/* =========================================================
+   SEARCH BOX
+========================================================= */
+
+.input-box {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+
+.input-box input {
+    padding: 10px 20px;
+
+    width: 300px;
+
+    border: 1px solid white;
+
+    border-radius: 10px;
+
+    outline: none;
+}
+
+
+.input-box button {
+    padding: 15px;
+
+    background: blue;
+
+    color: azure;
+
+    border: 1px solid white;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    width: 120px;
+
+    flex-shrink: 0;
+}
+
+
+.input-box button:hover {
+    color: blueviolet;
+}
+
+
+/* Dark Mode Search */
+
+.dark-mode .input-box input {
+    background-color: #2a2a2a;
+
+    color: white;
+
+    border: 1px solid #555;
+}
+
+
+.dark-mode .input-box input::placeholder {
+    color: #bbb;
+}
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.Hero-image {
+    width: 55%;
+
+    height: 450px;
+
+    margin-top: 10px;
+
+    overflow: hidden;
+
+    padding: 0;
+}
+
+
+.Hero-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================================
+   APPLY BUTTON
+========================================================= */
+
+.Apply-button {
+    margin-top: 20px;
+
+    cursor: pointer;
+}
+
+
+.Apply-button button {
+    padding: 15px;
+
+    background: blue;
+
+    color: azure;
+
+    border: 1px solid white;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    width: 120px;
+}
+
+
+.Apply-button button:hover {
+    color: blueviolet;
+}
+
+
+/* =========================================================
+   EXPLORE BUTTON
+========================================================= */
+
+.Explore-button {
+    margin-left: 150px;
+
+    margin-top: -45px;
+}
+
+
+.Explore-button button {
+    padding: 15px;
+
+    border: 2px solid rgba(0, 0, 0, 0.597);
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    color: blue;
+
+    width: 120px;
+}
+
+
+.Explore-button button:hover {
+    color: blueviolet;
+}
+
+
+/* Dark Mode Explore */
+
+.dark-mode .Explore-button button {
+    background-color: #1e1e1e;
+
+    color: #60a5fa;
+
+    border-color: #777;
+}
+
+
+/* =========================================================
+   TABLET NAVBAR
+========================================================= */
+
+@media screen and (max-width: 1000px) {
+
+    .navbar {
+        padding: 0 4%;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .log {
+        padding: 8px 15px;
+    }
+
+    .sign {
+        width: auto;
+        padding: 8px 15px;
+    }
+
+    .theme-button {
+        padding: 8px 10px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE NAVBAR
+========================================================= */
+
+@media screen and (max-width: 768px) {
+
+    /* Navbar */
+
+    .navbar {
+        min-height: 65px;
+
+        padding: 0 20px;
+    }
+
+
+    /* Show hamburger */
+
+    .menu-button {
+        display: block;
+    }
+
+
+    /* Hide desktop navigation */
+
+    .nav-links {
+        display: none;
+    }
+
+
+    /* Show mobile navigation */
+
+    .nav-links.active {
+        display: flex;
+
+        position: absolute;
+
+        top: 65px;
+
+        left: 0;
+
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+
+        padding: 15px 20px;
+
+        background-color: white;
+
+        box-shadow:
+            0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+
+
+    /* Dark Mode Mobile Menu */
+
+    .dark-mode .nav-links.active {
+        background-color: #1e1e1e;
+    }
+
+
+    /* Mobile menu items */
+
+    .nav-links.active li {
+        width: 100%;
+
+        list-style: none;
+
+        border-bottom: 1px solid #ddd;
+    }
+
+
+    /* Dark Mode menu borders */
+
+    .dark-mode .nav-links.active li {
+        border-bottom-color: #333;
+    }
+
+
+    /* Mobile links */
+
+    .nav-links.active a {
+        display: block;
+
+        width: 100%;
+
+        padding: 14px 5px;
+    }
+
+
+    /* Mobile buttons */
+.nav-links.active .log,
+.nav-links.active .sign,
+.nav-links.active .theme-button {
+
+    width: 100%;
+
+    margin: 8px 0;
+
+    padding: 12px;
+
+    display: block;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+    /* Mobile Logo */
+
+    .logo {
+        font-size: 24px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE HERO
+========================================================= */
+
+@media screen and (max-width: 768px) {
+
+    .Hero-container {
+        flex-direction: column;
+
+        width: 100%;
+
+        margin: 0;
+
+        padding: 20px;
+    }
+
+
+    .Hero {
+        width: 100%;
+
+        margin: 0;
+
+        padding: 40px 20px;
+    }
+
+
+    .Hero h1 {
+        font-size: 36px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .Hero-image {
+        width: 100%;
+
+        height: 300px;
+
+        margin-top: 20px;
+    }
+
+
+    .input-box {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+
+    .input-box input {
+        width: 100%;
+    }
+
+
+    .input-box button {
+        width: 100%;
+    }
+
+
+    .Apply-button button,
+    .Explore-button button {
+        width: 100%;
+    }
+
+
+    .Explore-button {
+        margin-left: 0;
+
+        margin-top: 10px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media screen and (max-width: 400px) {
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .menu-button {
+        font-size: 26px;
+    }
+}
+/* ================================= */
+/* HOME PAGE - DARK MODE */
+/* ================================= */
+
+/* Browse By Category */
+
+.dark-mode .categories-section {
+    background-color: #121212;
+}
+
+.dark-mode .categories-section h2 {
+    color: white;
+}
+
+.dark-mode .categories-section p {
+    color: #bbb;
+}
+
+.dark-mode .category-card {
+    background-color: #1e1e1e;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .category-card h3 {
+    color: white;
+}
+
+.dark-mode .category-card p {
+    color: #bbb;
+}
+
+.dark-mode .category-card:hover {
+    background-color: #252525;
+}
+
+
+/* ================================= */
+/* LATEST JOB OPENINGS */
+/* ================================= */
+
+.dark-mode .latest-jobs-section {
+    background-color: #121212;
+}
+
+.dark-mode .latest-jobs-section h2 {
+    color: white;
+}
+
+.dark-mode .latest-jobs-section p {
+    color: #bbb;
+}
+
+.dark-mode .job-card {
+    background-color: #1e1e1e;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .job-card h3 {
+    color: white;
+}
+
+.dark-mode .job-card h2 {
+    color: white;
+}
+
+.dark-mode .job-card p {
+    color: #bbb;
+}
+
+.dark-mode .job-card span {
+    color: #ccc;
+}
+
+.dark-mode .job-card:hover {
+    background-color: #252525;
+}
+
+
+/* ================================= */
+/* COMPANY / JOB INFO */
+/* ================================= */
+
+.dark-mode .job-company {
+    color: #60a5fa;
+}
+
+.dark-mode .job-location {
+    color: #bbb;
+}
+
+.dark-mode .job-type {
+    color: #ccc;
+}
+
+.dark-mode .job-salary {
+    color: #86efac;
+}
+/* ============================= */
+/* LOGGED IN USER */
+/* ============================= */
+
+.user-name {
+    color: #2563eb;
+    font-weight: 600;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+
+/* ============================= */
+/* LOGOUT BUTTON */
+/* ============================= */
+
+.logout-button {
+    border: none;
+    background-color: #dc2626;
+    color: white;
+
+    padding: 9px 16px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #b91c1c;
+}
+
+
+/* ============================= */
+/* DARK MODE */
+/* ============================= */
+
+.dark-mode .user-name {
+    color: #60a5fa;
+}
+
+.dark-mode .logout-button {
+    background-color: #ef4444;
+}
+
+.dark-mode .logout-button:hover {
+    background-color: #dc2626;
+}

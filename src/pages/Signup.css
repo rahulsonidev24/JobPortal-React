@@ -1,0 +1,375 @@
+/* ============================= */
+/* SIGNUP PAGE */
+/* ============================= */
+
+.signup-container {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+
+    box-sizing: border-box;
+
+    background-color: #ffffff;
+
+    transition: background-color 0.3s ease;
+}
+
+
+/* ============================= */
+/* SIGNUP BOX */
+/* ============================= */
+
+.signup-box {
+    width: 100%;
+    max-width: 450px;
+
+    padding: 40px;
+
+    box-sizing: border-box;
+
+    background-color: #ffffff;
+    color: #111827;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* ============================= */
+/* SIGNUP HEADER */
+/* ============================= */
+
+.signup-header {
+    text-align: center;
+   
+    margin-bottom: 30px;
+}
+
+
+/* ============================= */
+/* HEADING */
+/* ============================= */
+
+.signup-box h1 {
+    margin: 0;
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    color: #111827;
+
+    letter-spacing: -0.5px;
+
+    line-height: 1.2;
+}
+
+
+/* ============================= */
+/* DESCRIPTION */
+/* ============================= */
+
+.signup-description {
+    margin: 10px 0 0;
+
+    font-size: 15px;
+
+    font-weight: 400;
+
+    color: #6b7280;
+
+    line-height: 1.6;
+
+    text-align: center;
+}
+
+
+/* JobPortal highlight */
+
+.signup-description span {
+    color: #2563eb;
+
+    font-weight: 600;
+}
+
+
+/* ============================= */
+/* FORM */
+/* ============================= */
+
+.signup-box form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* ============================= */
+/* INPUT */
+/* ============================= */
+
+.signup-box input {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    background-color: #ffffff;
+
+    color: #111827;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* Placeholder */
+
+.signup-box input::placeholder {
+    color: #777777;
+}
+
+
+/* Input focus */
+
+.signup-box input:focus {
+    border-color: #2563eb;
+}
+
+
+/* ============================= */
+/* SIGN UP BUTTON */
+/* ============================= */
+
+.signup-box button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    margin-top: 5px;
+
+    transition: background-color 0.3s ease;
+}
+
+
+.signup-box button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* ============================= */
+/* ERROR */
+/* ============================= */
+
+.error-message {
+    color: #dc2626 !important;
+
+    background-color: #fee2e2;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    margin: 0 !important;
+
+    text-align: center !important;
+
+    font-size: 14px;
+}
+
+
+/* ============================= */
+/* SUCCESS */
+/* ============================= */
+
+.success-message {
+    color: #15803d !important;
+
+    background-color: #dcfce7;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    margin: 0 !important;
+
+    text-align: center !important;
+
+    font-size: 14px;
+}
+
+
+/* ============================= */
+/* LOGIN LINK */
+/* ============================= */
+
+.login-link {
+    margin-top: 20px !important;
+
+    margin-bottom: 0 !important;
+
+    font-size: 14px;
+
+    color: #666666;
+
+    text-align: center;
+}
+
+
+.login-link span {
+    color: #2563eb;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.login-link span:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================================= */
+/* DARK MODE */
+/* ================================================= */
+
+
+/* Signup background */
+
+.dark-mode .signup-container {
+    background-color: #111827;
+}
+
+
+/* Signup box */
+
+.dark-mode .signup-box {
+    background-color: #1f2937;
+
+    color: #ffffff;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Heading */
+
+.dark-mode .signup-box h1 {
+    color: #ffffff;
+}
+
+
+/* Description */
+
+.dark-mode .signup-description {
+    color: #d1d5db;
+}
+
+
+/* JobPortal text */
+
+.dark-mode .signup-description span {
+    color: #60a5fa;
+}
+
+
+/* Inputs */
+
+.dark-mode .signup-box input {
+    background-color: #374151;
+
+    color: #ffffff;
+
+    border-color: #4b5563;
+}
+
+
+/* Input placeholder */
+
+.dark-mode .signup-box input::placeholder {
+    color: #d1d5db;
+}
+
+
+/* Input focus */
+
+.dark-mode .signup-box input:focus {
+    border-color: #60a5fa;
+}
+
+
+/* Login text */
+
+.dark-mode .login-link {
+    color: #d1d5db;
+}
+
+
+/* Login link */
+
+.dark-mode .login-link span {
+    color: #60a5fa;
+}
+
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 500px) {
+
+    .signup-container {
+        padding: 30px 15px;
+    }
+
+    .signup-box {
+        padding: 30px 20px;
+    }
+
+    .signup-box h1 {
+        font-size: 28px;
+    }
+
+    .signup-description {
+        font-size: 14px;
+    }
+}

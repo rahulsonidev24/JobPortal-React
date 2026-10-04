@@ -1,0 +1,217 @@
+.Latest-jobs{
+    width: 90%;
+    margin: auto;
+    padding: 60px 0;
+}
+.Latest-jobs-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.Latest-jobs-heading h2{
+    font-size: 35px;
+}
+.Latest-jobs-heading button{
+    color: blue;
+    border:none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Latest-jobs-heading button:hover{
+color: black;
+}
+.Latest-job-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.job-cards{
+    background: #fff;
+    padding: 25px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.job-cards:hover{
+    transform: translateY(-10px);
+}
+
+.job-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.company-info{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.company-info img{
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+.bookmark{
+    color: #2563eb;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.job-card h3{
+
+    margin:20px 0;
+
+}
+
+.job-info{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:15px;
+
+}
+
+.job-info span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#666;
+
+}
+
+.salary{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+.apply-btn{
+
+    width:100%;
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+.apply-btn:hover{
+
+    background:#1d4ed8;
+
+}
+/* ========================================= */
+/* LATEST JOBS - DARK MODE */
+/* ========================================= */
+
+.dark-mode .Latest-jobs {
+    background-color: #121212;
+    color: white;
+}
+
+/* Heading */
+
+.dark-mode .Latest-jobs-heading h2 {
+    color: white;
+}
+
+.dark-mode .Latest-jobs-heading button {
+    background-color: #1e1e1e;
+    color: #60a5fa;
+}
+
+.dark-mode .Latest-jobs-heading button:hover {
+    color: white;
+    background-color: #2a2a2a;
+}
+
+
+/* Job Cards */
+
+.dark-mode .job-cards {
+    background-color: #1e1e1e;
+    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .job-cards:hover {
+    background-color: #242424;
+}
+
+
+/* Company Information */
+
+.dark-mode .company-info h3 {
+    color: white;
+}
+
+.dark-mode .company-info p {
+    color: #bbb;
+}
+
+
+/* Job Title */
+
+.dark-mode .job-card h3 {
+    color: white;
+}
+
+
+/* Job Information */
+
+.dark-mode .job-info span {
+    color: #bbb;
+}
+
+
+/* Salary */
+
+.dark-mode .salary {
+    color: #60a5fa;
+}
+
+
+/* Bookmark */
+
+.dark-mode .bookmark {
+    color: #60a5fa;
+}
+
+
+/* Apply Button */
+
+.dark-mode .apply-btn {
+    background-color: #2563eb;
+    color: white;
+}
+
+.dark-mode .apply-btn:hover {
+    background-color: #1d4ed8;
+}

@@ -1,0 +1,644 @@
+/* =========================================
+   JOBS PAGE
+========================================= */
+
+.jobs-page {
+    min-height: 100vh;
+    padding: 50px 8%;
+    background-color: #f5f7fa;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.jobs-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.jobs-header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+
+.jobs-header > p {
+    font-size: 18px;
+    color: #64748b;
+}
+
+
+/* =========================================
+   COMPANY FILTER
+========================================= */
+
+.company-filter {
+    max-width: 600px;
+    margin: 25px auto 0;
+
+    padding: 15px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.company-filter p {
+    margin: 0;
+    color: #475569;
+}
+
+.company-filter strong {
+    color: #2563eb;
+}
+
+.company-filter button {
+    padding: 10px 18px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.company-filter button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =========================================
+   JOB COUNT
+========================================= */
+
+.jobs-count {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.jobs-count h2 {
+    margin: 0;
+
+    font-size: 28px;
+
+    color: #1e293b;
+}
+
+.jobs-count span {
+    color: #64748b;
+}
+
+
+/* =========================================
+   JOB GRID
+========================================= */
+
+.jobs-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+}
+
+
+/* =========================================
+   JOB CARD
+========================================= */
+
+.jobs-card {
+    position: relative;
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: all 0.3s ease;
+}
+
+.jobs-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   BOOKMARK BUTTON
+========================================= */
+
+.bookmark-button {
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #f1f5f9;
+
+    color: #64748b;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    z-index: 10;
+}
+
+.bookmark-button:hover {
+    background-color: #dbeafe;
+
+    color: #2563eb;
+
+    transform: scale(1.08);
+}
+
+.bookmark-button.bookmarked {
+    background-color: #2563eb;
+
+    color: white;
+}
+
+.bookmark-button.bookmarked:hover {
+    background-color: #1d4ed8;
+
+    color: white;
+}
+
+
+/* =========================================
+   COMPANY
+========================================= */
+
+.jobs-card-top {
+    margin-bottom: 20px;
+}
+
+.company-section {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding-right: 50px;
+}
+
+.company-section img {
+    width: 60px;
+    height: 60px;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+
+    border: 1px solid #e2e8f0;
+
+    padding: 5px;
+
+    background-color: white;
+}
+
+.company-section h3 {
+    margin: 0 0 5px;
+
+    color: #2563eb;
+
+    font-size: 18px;
+}
+
+.company-section p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   JOB TITLE
+========================================= */
+
+.job-title {
+    margin: 15px 0;
+
+    font-size: 22px;
+
+    color: #1e293b;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   JOB INFORMATION
+========================================= */
+
+.job-information {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+}
+
+.job-information span {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+.job-information svg {
+    color: #2563eb;
+}
+
+
+/* =========================================
+   SALARY
+========================================= */
+
+.job-salary {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 20px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #16a34a;
+}
+
+
+/* =========================================
+   VIEW DETAILS
+========================================= */
+
+.view-job-button {
+    width: 100%;
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.view-job-button:hover {
+    background-color: #1d4ed8;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   NO JOBS
+========================================= */
+
+.no-jobs {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background-color: white;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.no-jobs h2 {
+    margin-bottom: 10px;
+
+    color: #1e293b;
+}
+
+.no-jobs p {
+    color: #64748b;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+    .jobs-page {
+        padding: 40px 5%;
+    }
+
+    .jobs-header h1 {
+        font-size: 34px;
+    }
+
+    .jobs-count h2 {
+        font-size: 24px;
+    }
+
+    .company-filter {
+        flex-direction: column;
+    }
+
+    .company-filter button {
+        width: 100%;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .jobs-page {
+        padding: 30px 4%;
+    }
+
+    .jobs-header h1 {
+        font-size: 30px;
+    }
+
+    .jobs-header > p {
+        font-size: 16px;
+    }
+
+    .jobs-count {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 8px;
+    }
+
+    .jobs-card {
+        padding: 20px;
+    }
+
+    .job-title {
+        font-size: 19px;
+    }
+
+    .bookmark-button {
+        top: 15px;
+        right: 15px;
+
+        width: 36px;
+        height: 36px;
+
+        font-size: 16px;
+    }
+}
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+.dark-mode .jobs-page {
+    background-color: #111827;
+}
+
+.dark-mode .jobs-header h1 {
+    color: white;
+}
+
+.dark-mode .jobs-header > p {
+    color: #9ca3af;
+}
+
+.dark-mode .jobs-count h2 {
+    color: white;
+}
+
+.dark-mode .jobs-count span {
+    color: #9ca3af;
+}
+
+
+/* COMPANY FILTER */
+
+.dark-mode .company-filter {
+    background-color: #1f2937;
+}
+
+.dark-mode .company-filter p {
+    color: #d1d5db;
+}
+
+.dark-mode .company-filter strong {
+    color: #60a5fa;
+}
+
+
+/* JOB CARD */
+
+.dark-mode .jobs-card {
+    background-color: #1f2937;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* BOOKMARK */
+
+.dark-mode .bookmark-button {
+    background-color: #374151;
+
+    color: #d1d5db;
+}
+
+.dark-mode .bookmark-button:hover {
+    background-color: #2563eb;
+
+    color: white;
+}
+
+.dark-mode .bookmark-button.bookmarked {
+    background-color: #2563eb;
+
+    color: white;
+}
+
+
+/* COMPANY */
+
+.dark-mode .company-section h3 {
+    color: #60a5fa;
+}
+
+.dark-mode .company-section p {
+    color: #9ca3af;
+}
+
+
+/* TITLE */
+
+.dark-mode .job-title {
+    color: white;
+}
+
+
+/* INFORMATION */
+
+.dark-mode .job-information span {
+    color: #9ca3af;
+}
+
+.dark-mode .job-information svg {
+    color: #60a5fa;
+}
+
+
+/* SALARY */
+
+.dark-mode .job-salary {
+    color: #4ade80;
+}
+
+
+/* NO JOBS */
+
+.dark-mode .no-jobs {
+    background-color: #1f2937;
+}
+
+.dark-mode .no-jobs h2 {
+    color: white;
+}
+
+.dark-mode .no-jobs p {
+    color: #9ca3af;
+}
+/* =========================
+   BOOKMARK BUTTON
+========================= */
+
+.jobs-card {
+    position: relative;
+}
+
+.bookmark-button {
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #f1f5f9;
+
+    color: #64748b;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    transition: 0.3s;
+}
+
+.bookmark-button:hover {
+    background-color: #dbeafe;
+
+    color: #2563eb;
+
+    transform: scale(1.1);
+}
+
+
+/* BOOKMARKED */
+
+.bookmark-button.bookmarked {
+    background-color: #2563eb;
+
+    color: white;
+}
+
+
+/* BOOKMARKED HOVER */
+
+.bookmark-button.bookmarked:hover {
+    background-color: #1d4ed8;
+
+    color: white;
+}

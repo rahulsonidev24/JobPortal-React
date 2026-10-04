@@ -1,0 +1,272 @@
+
+/* =========================================
+   COMPANIES PAGE
+========================================= */
+
+.companies-page {
+    min-height: 100vh;
+    padding: 50px 8%;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.companies-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.companies-header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.companies-header p {
+    font-size: 18px;
+    color: #666;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.company-search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.company-search input {
+    width: 450px;
+    max-width: 100%;
+
+    padding: 14px 18px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+.company-search input:focus {
+    border-color: #2563eb;
+}
+
+
+/* =========================================
+   COMPANY COUNT
+========================================= */
+
+.company-count {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.company-count h2 {
+    font-size: 25px;
+}
+
+.company-count span {
+    color: #666;
+}
+
+
+/* =========================================
+   COMPANY GRID
+========================================= */
+
+.companies-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+}
+
+
+/* =========================================
+   COMPANY CARD
+========================================= */
+
+.company-card {
+    background: white;
+
+    padding: 30px 20px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+.company-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.company-logo {
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-logo img {
+    max-width: 80px;
+    max-height: 80px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================
+   COMPANY NAME
+========================================= */
+
+.company-card h2 {
+    margin-bottom: 10px;
+
+    font-size: 22px;
+
+    color: #222;
+}
+
+.company-card p {
+    color: #666;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   VIEW JOBS BUTTON
+========================================= */
+
+.company-card button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+.company-card button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================================
+   NO COMPANIES
+========================================= */
+
+.no-companies {
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+.no-companies h2 {
+    margin-bottom: 10px;
+}
+
+.no-companies p {
+    color: #666;
+}
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+.dark-mode .company-card {
+    background: #1e1e1e;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .company-card h2 {
+    color: white;
+}
+
+.dark-mode .company-card p {
+    color: #bbb;
+}
+
+.dark-mode .companies-header p {
+    color: #bbb;
+}
+
+.dark-mode .company-count span {
+    color: #bbb;
+}
+
+.dark-mode .company-search input {
+    background: #2a2a2a;
+
+    color: white;
+
+    border-color: #555;
+}
+
+.dark-mode .company-search input::placeholder {
+    color: #aaa;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media screen and (max-width: 600px) {
+
+    .companies-page {
+        padding: 35px 20px;
+    }
+
+    .companies-header h1 {
+        font-size: 32px;
+    }
+
+    .company-count {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 8px;
+    }
+
+    .companies-grid {
+        grid-template-columns: 1fr;
+    }
+}
